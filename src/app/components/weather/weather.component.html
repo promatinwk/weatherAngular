@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-12 text-center">
+            <h1>Bieżące warunki pogodowe</h1>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-12">
+            <p class="text-center">Temperatura: {{weather.temperature}} °C</p>
+            <p class="text-center">Temperatura odczuwalna: {{weather.sensed_temperature}} °C</p>
+            <p class="text-center">Wilgotność: {{weather.humidity}} %</p>
+            <p class="text-center">Ciśnienie: {{weather.pressure}} hPa</p>
+        </div>
+            <div class="col-12 text-center">
+                <button class="btn btn-primary" (click)="refreshData()">Odśwież</button>
+            </div>
+    </div>
+</div>
+
+
